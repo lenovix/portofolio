@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import profilePhoto from '../images/profile-photo.jpg';
 
 const HeaderContainer = styled.header`
   background-color: #333;
@@ -35,22 +36,30 @@ const Nav = styled.nav`
 const Header = () => {
   return (
     <HeaderContainer>
-      <h1>Portofolio Saya</h1>
+      <div className="profile-section">
+        <br />
+        <img src={profilePhoto} alt="Profile" className="profile-photo" />
+        <h2>Ichsanul Kamil Sudarmi</h2>
+        <p>
+          Hai, saya Kamil. Seorang pengembang aplikasi yang memiliki pengalaman
+          baru 1 tahun dalam pengembangan mobile dan website.
+        </p>
+      </div>
       <Nav>
         <ul>
           <li>
             <NavLink to="/" exact activeClassName="active">
-              Tentang Saya
+              About
             </NavLink>
           </li>
           <li>
             <NavLink to="/projects" activeClassName="active">
-              Proyek
+              Project
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" activeClassName="active">
-              Kontak
+              Contact
             </NavLink>
           </li>
         </ul>
