@@ -58,7 +58,7 @@ export default function Home() {
       <section className="p-8 max-w-3xl mx-auto">
         <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         <ul className="list-disc list-inside text-gray-800 space-y-2">
-          <li>Website Reservasi Restoran dengan Chatbot WhatsApp</li>
+          {/* <li>Website Reservasi Restoran dengan Chatbot WhatsApp</li> */}
           <li>kamilBrowser</li>
           <li>3D Character Viewer Website (Babylon.js)</li>
         </ul>
