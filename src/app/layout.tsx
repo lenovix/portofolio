@@ -71,11 +71,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
 
         {children}
-
-        <footer className="text-center text-sm text-gray-500 py-6">
-          &copy; 2025 - {new Date().getFullYear()} Ichsanul Kamil Sudarmi. All
-          rights reserved.
-        </footer>
       </body>
     </html>
   );

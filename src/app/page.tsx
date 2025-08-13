@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -114,6 +115,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-center border-b pb-4 tracking-tight">
+            Projects
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Project Card - Tapvest */}
+            <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
+              <Image
+                src="/tapvest-thumbnail.jpg"
+                alt="Tapvest Game"
+                width={600}
+                height={400}
+                className="object-cover w-full h-48"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-2">Tapvest</h3>
+                <p className="text-gray-600 mb-4">
+                  A clicker-based investment simulation game where players build
+                  wealth, invest in businesses, and climb the leaderboard.
+                </p>
+                <Link
+                  href="/tapvest"
+                  className="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+                >
+                  View Project
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
@@ -156,6 +191,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className="text-center text-sm text-gray-500 py-6">
+        &copy; {new Date().getFullYear()} Ichsanul Kamil Sudarmi. All rights
+        reserved.
+      </footer>
     </main>
   );
 }
