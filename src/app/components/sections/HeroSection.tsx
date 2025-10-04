@@ -8,7 +8,7 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen w-screen relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center px-6">
+    <section className="lg:h-screen w-screen py-20 px-6 relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center px-6">
       {/* Decorative background gradient */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-100/30 via-transparent to-purple-100/20 dark:from-blue-500/10 dark:to-purple-500/10 blur-3xl -z-10" />
 

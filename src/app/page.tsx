@@ -12,7 +12,7 @@ export default function HomePage() {
     <main className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans">
       <Sidebar />
       {/* Hero */}
-      <section id="hero" className="h-screen flex items-center">
+      <section id="hero" className="flex items-center">
         <HeroSection />
       </section>
 
