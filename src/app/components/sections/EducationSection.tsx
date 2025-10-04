@@ -26,7 +26,7 @@ export default function EducationSection() {
               className="group bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 md:p-8 cursor-pointer 
                            border border-transparent hover:border-indigo-500/30 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row items-start gap-6"
               onClick={() => setSelected(i)}
-              // initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
               <div className="w-20 h-20 relative flex-shrink-0">
