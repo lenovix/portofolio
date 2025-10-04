@@ -31,3 +31,8 @@ html {
 .img_auto{
   height: auto;
 }
+
+body.modal-open {
+  overflow: hidden;
+  filter: blur(2px);
+}
