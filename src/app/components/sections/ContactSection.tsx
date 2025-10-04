@@ -41,8 +41,18 @@ export default function ContactSection() {
           {/* LinkedIn */}
           <motion.a
             href={contact.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.preventDefault();
+              const start = Date.now();
+              // Coba buka LinkedIn app
+              window.location.href = "linkedin://in/kamilsudarmi";
+              // fallback ke web setelah 500ms
+              setTimeout(() => {
+                if (Date.now() - start < 1000) {
+                  window.open(contact.linkedin, "_blank");
+                }
+              }, 500);
+            }}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center justify-center gap-3 bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-md hover:shadow-xl border border-transparent hover:border-indigo-500/40 transition-all"
