@@ -194,7 +194,7 @@ export default function HolidayCalendarPage() {
             {/* ================= AGENDA (1/4) ================= */}
             <aside
               className="lg:col-span-1 p-6 rounded-2xl
-          bg-gradient-to-b from-blue-50 to-blue-100
+          bg-linear-to-b from-blue-50 to-blue-100
           dark:from-gray-800 dark:to-gray-700
           border border-blue-200 dark:border-gray-600
           h-fit sticky top-24"
